@@ -1,0 +1,4 @@
+# SentinelOps targets: one URL per line. Bare domains default to https://.
+https://www.python.org
+https://github.com
+https://www.wikipedia.org
