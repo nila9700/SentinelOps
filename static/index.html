@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SentinelOps</title>
+  <meta name="description" content="Check whether a company's website is working, see what's wrong, and follow the fix.">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#/" aria-label="SentinelOps home">
+        <img src="/static/favicon.svg" alt="" width="28" height="28">
+        <span>SentinelOps</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#/" data-nav="home">Status</a>
+        <a href="#/incidents" data-nav="incidents">Tickets <span id="nav-count" class="count" hidden></span></a>
+        <a href="#/teams" data-nav="teams">Teams</a>
+      </nav>
+    </div>
+  </header>
+  <div id="offline" class="offline" role="alert" hidden>
+    We can't reach the SentinelOps server. Check that it's still running, then this page will catch up by itself.
+  </div>
+  <main id="view" tabindex="-1"></main>
+  <footer class="footer">
+    <div class="wrap">
+      <strong>SentinelOps</strong> is a portfolio project. Website checks are real. Teams, agents and tickets are fictional, and nothing is sent to anyone.
+    </div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
